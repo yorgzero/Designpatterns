@@ -9,15 +9,15 @@ public:
 class WinButton : public Button {
 public:
     void paint() {
-        std::cout << Ï'm a WinButton";
+        std::cout << "I'm a WinButton";
 }
 };
 
-class OSXButton : public Button {
+class OSXButton : public Button  {
 public:
-    virtual Button* createButton() = 0;
-    virtual ~GUIFactory() { }
-};
+    void paint() {
+        std::cout << "I am an OSXButton"
+
 
 class GUIFactory {
 public:
